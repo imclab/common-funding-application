@@ -4,3 +4,4 @@ sandbox_config.py
 *.swp
 *~
 *.sqlite3
+venv/
