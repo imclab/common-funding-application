@@ -13,6 +13,12 @@ import os
 DISPLAY_NAME = ""
 URL_ROOT = "/" + DISPLAY_NAME
 
-DATABASE_NAME = ""
+# If developing locally, set to true and set DATABASE_NAME to the SQLite file.
+# In that case, DATABASE_USER and DABASE_PASSWORD can be left empty.
+# If developing on a server with MySQL, set to False and set the
+# database info accordingly.
+USE_SQLITE = True
+
+DATABASE_NAME = "database.sqlite3"
 DATABASE_USER = ""
 DATABASE_PASSWORD = ""
