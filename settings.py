@@ -11,10 +11,6 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 ACCOUNT_ACTIVATION_DAYS = 7
 
-LOGIN_URL = URL_ROOT + "/accounts/login/"
-LOGOUT_URL = URL_ROOT + "/accounts/logout/"
-LOGIN_REDIRECT_URL = URL_ROOT
-
 AUTH_PROFILE_MODULE = "app.CFAUser"
 
 
