@@ -4,7 +4,6 @@ import sys
 
 from sandbox_config import *
 
-DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
@@ -23,7 +22,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.%s' % ('sqlite3' if USE_SQLITE 
-                                             else 'django.db.backends.mysql'),
+                                             else 'mysql'),
         'NAME': DATABASE_NAME, # Or path to database file if using sqlite3.
         'USER': DATABASE_USER, # Not used with sqlite3.
         'PASSWORD': DATABASE_PASSWORD, # Not used with sqlite3.
